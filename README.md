@@ -23,14 +23,14 @@
 
 **HalalCheck API** adalah arsitektur REST kelas enterprise yang dibangun untuk terintegrasi secara mulus dengan data sertifikasi halal resmi BPJPH (Badan Penyelenggara Jaminan Produk Halal). Dirancang untuk skalabilitas tinggi, API ini mampu menangani ribuan kueri dengan efisien melalui caching tingkat lanjut, pemrosesan antrean di latar belakang, dan komponen machine learning.
 
-**🚀 Live API di RapidAPI Hub https://rapidapi.com/diofikriyanto3321/api/halalcheck-api** 
+**Live API di RapidAPI Hub https://rapidapi.com/diofikriyanto3321/api/halalcheck-api** 
 
 > **⚠️ DISCLAIMER (UNOFFICIAL):**
 > API ini dikembangkan secara independen oleh **dfchanelxd (Quorlynix Technology)** dan **TIDAK** berafiliasi, disponsori, atau didukung oleh BPJPH atau pemerintah Republik Indonesia. Data diambil dari sumber publik untuk tujuan edukasi dan kemudahan developer.
 
 ---
 
-## 🏗️ Arsitektur Sistem
+## Arsitektur Sistem
 
 API ini dirancang menggunakan pemrosesan latar belakang bergaya **Microservices** dan caching berlapis untuk memastikan waktu respons di bawah satu detik (sub-second) bahkan saat sumber utama (upstream) lambat atau tidak tersedia.
 
@@ -54,7 +54,7 @@ graph TD
 
 ---
 
-## ✨ Fitur Utama & Keunggulan Teknis
+## Fitur Utama & Keunggulan Teknis
 
 - **High-Performance Scraping Engine:** Logika inti yang ditenagai oleh kombinasi otomatisasi *headless* dan Rust, secara efektif melewati algoritma anti-bot yang berat.
 - **Resilient Caching Strategy:** Caching multi-level melalui Redis memastikan kueri berulang disajikan dalam `~50ms`.
@@ -64,7 +64,7 @@ graph TD
 
 ---
 
-## 💻 Contoh Integrasi
+## Contoh Integrasi
 
 Untuk menjaga keamanan logika *web-scraping* internal dan *pipeline* ML kami, repositori ini berfungsi sebagai **dokumentasi dan *sandbox* SDK**.
 
