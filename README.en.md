@@ -113,8 +113,10 @@ try {
 
 ## 📫 Contact & Custom Enterprise Solutions
 
-For businesses that require custom service-level agreements (SLA), offline database dumps, or specialized AI training datasets:
-Please reach out via the Contact Developer section on our [RapidAPI portal]().
+For further discussion, custom plans, or collaboration, you can reach out to the developer via:
+
+- ✉️ **Email:** [diofikriyanto3321@gmail.com](mailto:diofikriyanto3321@gmail.com)
+- 💬 **WhatsApp (Fast Response):** [Chat with Developer](https://wa.me/6285258880659)
 
 ---
 *© 2026 Built with ❤️ by dfchanelxd (Quorlynix Technology).*

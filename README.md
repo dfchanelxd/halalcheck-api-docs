@@ -113,8 +113,10 @@ try {
 
 ## 📫 Kontak & Solusi Enterprise Kustom
 
-Untuk bisnis yang memerlukan Service-Level Agreement (SLA) khusus, database *dump* offline, atau dataset pelatihan AI khusus:
-Silakan hubungi kami melalui bagian Contact Developer di [portal RapidAPI]() kami.
+Untuk diskusi lebih lanjut, paket kustom, atau kolaborasi, Anda dapat menghubungi developer melalui:
+
+- ✉️ **Email:** [diofikriyanto3321@gmail.com](mailto:diofikriyanto3321@gmail.com)
+- 💬 **WhatsApp (Fast Response):** [Chat dengan Developer](https://wa.me/6285258880659)
 
 ---
 *© 2026 Dibuat dengan ❤️ oleh dfchanelxd (Quorlynix Technology).*
