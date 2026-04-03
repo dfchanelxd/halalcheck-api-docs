@@ -1,21 +1,39 @@
-# HalalCheck API 🛡️
+<p align="right">
+  <b>🇮🇩 Indonesia</b> | <a href="README.en.md">🇬🇧 English</a>
+</p>
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Python](https://img.shields.io/badge/python-3.11+-green.svg)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
-![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=flat&logo=redis&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white)
-
-HalalCheck API is an enterprise-grade REST architecture built to seamlessly integrate with BPJPH's (Badan Penyelenggara Jaminan Produk Halal) official halal certification data. Built for scale, it handles thousands of queries seamlessly through advanced caching, background queue processing, and machine learning components.
-
-**[🚀 Live API on RapidAPI Hub (Click Here)](https://rapidapi.com)** 
-*(Placeholder link: please replace with your real RapidAPI Hub URL)*
+<p align="center">
+  <img src="HalalCheck_API_Logo.png" width="500" alt="HalalCheck API Logo">
+  <br>
+  <b>RESTful API real-time untuk verifikasi sertifikat halal BPJPH</b>
+  <br>
+  Built by <a href="https://halalcheckapi.site">Quorlynix Technology</a> · RapidAPI Ready · v1.0.0
+</p>
+<p align="center">
+  <a href="https://rapidapi.com"><img src="https://img.shields.io/badge/status-production-green" alt="Status"></a>
+  <img src="https://img.shields.io/badge/python-3.11+-blue" alt="Python">
+  <img src="https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi" alt="FastAPI">
+  <img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=flat&logo=redis&logoColor=white" alt="Redis">
+  <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white" alt="Postgres">
+</p>
 
 ---
 
-## 🏗️ System Architecture
+## 📖 Tentang Project
 
-This API is designed using **Microservices-style** background processing and layered caching to ensure sub-second response times even when the upstream sources are slow or unavailable.
+**HalalCheck API** adalah arsitektur REST kelas enterprise yang dibangun untuk terintegrasi secara mulus dengan data sertifikasi halal resmi BPJPH (Badan Penyelenggara Jaminan Produk Halal). Dirancang untuk skalabilitas tinggi, API ini mampu menangani ribuan kueri dengan efisien melalui caching tingkat lanjut, pemrosesan antrean di latar belakang, dan komponen machine learning.
+
+**[🚀 Live API di RapidAPI Hub (Klik di Sini)](https://rapidapi.com)** 
+*(Placeholder link: silakan ganti dengan URL RapidAPI Hub Anda yang sebenarnya)*
+
+> **⚠️ DISCLAIMER (UNOFFICIAL):**
+> API ini dikembangkan secara independen oleh **dfchanelxd (Quorlynix Technology)** dan **TIDAK** berafiliasi, disponsori, atau didukung oleh BPJPH atau pemerintah Republik Indonesia. Data diambil dari sumber publik untuk tujuan edukasi dan kemudahan developer.
+
+---
+
+## 🏗️ Arsitektur Sistem
+
+API ini dirancang menggunakan pemrosesan latar belakang bergaya **Microservices** dan caching berlapis untuk memastikan waktu respons di bawah satu detik (sub-second) bahkan saat sumber utama (upstream) lambat atau tidak tersedia.
 
 ```mermaid
 graph TD
@@ -37,21 +55,21 @@ graph TD
 
 ---
 
-## ✨ Key Features & Technical Highlights
+## ✨ Fitur Utama & Keunggulan Teknis
 
-- **High-Performance Scraping Engine:** Core logic powered by a combination of headless automation and Rust, bypassing heavy anti-bot algorithms effectively.
-- **Resilient Caching Strategy:** Multi-level caching via Redis ensures repeat queries are served in `~50ms`.
-- **Background Worker Processing:** Utilizing Celery + Redis broker to handle long-running ingredient extraction requests without blocking the main event loop.
-- **AI-Powered Ingredient Verification:** Analyzes and predicts the halal integrity of non-certified or ambiguous ingredients using an integrated Large Language Model (Anthropic/OpenAI) with high accuracy.
-- **Fully Dockerized:** Shipped with `docker-compose` wrapping the API, PostgreSQL, Redis, Celery beat, and Nginx.
+- **High-Performance Scraping Engine:** Logika inti yang ditenagai oleh kombinasi otomatisasi *headless* dan Rust, secara efektif melewati algoritma anti-bot yang berat.
+- **Resilient Caching Strategy:** Caching multi-level melalui Redis memastikan kueri berulang disajikan dalam `~50ms`.
+- **Background Worker Processing:** Menggunakan Celery + Redis broker untuk menangani ekstraksi bahan (*ingredients*) berdurasi panjang tanpa memblokir event loop utama.
+- **AI-Powered Ingredient Verification:** Menganalisis dan memprediksi kehalalan bahan yang belum bersertifikat atau ambigu menggunakan Model Bahasa Besar yang terintegrasi (Anthropic/OpenAI) dengan akurasi tinggi.
+- **Fully Dockerized:** Dilengkapi dengan `docker-compose` yang membungkus API, PostgreSQL, Redis, Celery beat, dan Nginx secara utuh.
 
 ---
 
-## 💻 Integration Examples
+## 💻 Contoh Integrasi
 
-To maintain the security of our internal web-scraping logic and ML pipelines, this repository serves as **documentation and an SDK sandbox**. 
+Untuk menjaga keamanan logika *web-scraping* internal dan *pipeline* ML kami, repositori ini berfungsi sebagai **dokumentasi dan *sandbox* SDK**.
 
-Here are snippets to easily consume the HalalCheck API in your own application:
+Berikut ini adalah *snippet* untuk mengkonsumsi HalalCheck API dengan mudah di aplikasi Anda:
 
 ### Python (Requests)
 ```python
@@ -94,10 +112,10 @@ try {
 
 ---
 
-### 📫 Contact & Custom Enterprise Solutions
+## 📫 Kontak & Solusi Enterprise Kustom
 
-For businesses that require custom service-level agreements (SLA), offline database dumps, or specialized AI training datasets:
-Please reach out via the Contact Developer section on our [RapidAPI portal]().
+Untuk bisnis yang memerlukan Service-Level Agreement (SLA) khusus, database *dump* offline, atau dataset pelatihan AI khusus:
+Silakan hubungi kami melalui bagian Contact Developer di [portal RapidAPI]() kami.
 
 ---
-*© 2026 Developed with ❤️. All source code relating to the scrapper logic is proprietary and closed-source.*
+*© 2026 Dibuat dengan ❤️ oleh dfchanelxd (Quorlynix Technology).*
